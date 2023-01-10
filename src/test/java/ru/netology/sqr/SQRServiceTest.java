@@ -1,19 +1,18 @@
 package ru.netology.sqr;
 
-import org.testng.AssertJUnit;
+import org.junit.jupiter.api.Assertions;
 import org.testng.annotations.Test;
 
 public class SQRServiceTest {
 
     @Test
-    public void test() {
+    public void calculateTest() {
         SQRService service = new SQRService();
 
-        int actual = service.calcul(200, 300);
+        int actual = service.calculate(200, 300);
         int expected = 3;
 
-
-        AssertJUnit Assertions = null;
         Assertions.assertEquals(expected, actual);
     }
 }
+
